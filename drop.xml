@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone target="DROP">
+  <short>Drop</short>
+  <description>Unsolicited incoming network packets are dropped. Incoming packets that are related to outgoing network connections are accepted. Outgoing network connections are allowed.</description>
+  <service name="http"/>
+  <rule family="ipv4">
+    <source address="192.168.18.6"/>
+    <port protocol="tcp" port="22"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="192.168.18.7"/>
+    <port protocol="tcp" port="22"/>
+    <accept/>
+  </rule>
+</zone>
