@@ -13,9 +13,4 @@
     <port protocol="tcp" port="22"/>
     <accept/>
   </rule>
-  <rule family="ipv4">
-    <source address="192.168.18.8"/>
-    <port protocol="tcp" port="22"/>
-    <accept/>
-  </rule>
 </zone>
